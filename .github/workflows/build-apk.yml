@@ -53,7 +53,7 @@ jobs:
 
       - name: Build debug APK
         working-directory: ${{ steps.loc.outputs.dir }}
-        run: ./gradlew assembleDebug --no-daemon
+        run: gradle assembleDebug --no-daemon
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
